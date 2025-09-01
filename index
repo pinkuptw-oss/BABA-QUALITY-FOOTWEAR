@@ -1,1 +1,125 @@
-index.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BABA QUALITY FOOTWEAR</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="BABA QUALITY FOOTWEAR - Mens, Ladies, Kids & Accessories. Visit our Vyapar store to buy.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- simple SVG logo -->
+          <svg width="56" height="56" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect rx="16" width="100" height="100" fill="#222"/>
+            <text x="50" y="58" font-family="Verdana" font-size="36" fill="#fff" text-anchor="middle">B</text>
+          </svg>
+        </div>
+        <div>
+          <h1>BABA QUALITY FOOTWEAR</h1>
+          <p class="tag">Comfort • Style • Value</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" id="shopNow" href="#" onclick="openVyaparPlaceholder(event)">Shop Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2>Trusted Footwear for the Whole Family</h2>
+          <p>Discover mens, ladies, kids footwear and accessories. Local shop — quality you can trust.</p>
+          <p><a class="btn btn-primary" id="heroShop" href="#" onclick="openVyaparPlaceholder(event)">Visit Vyapar Store</a></p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- decorative SVG -->
+          <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="120" rx="12" fill="#f3f4f6"/>
+            <g transform="translate(10,20)" fill="none" stroke="#111" stroke-width="3">
+              <path d="M10 40 Q40 0, 100 20 Q160 40, 180 30" />
+              <path d="M15 50 Q60 80, 120 80 Q170 80, 185 70" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="container categories">
+      <h3>Categories</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media">MENS</div>
+          <h4>Men’s Footwear</h4>
+          <p>Casual, formal, sandals and more.</p>
+          <p><a class="btn" href="#" onclick="openVyaparPlaceholder(event)">View Products</a></p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">LADIES</div>
+          <h4>Ladies Footwear</h4>
+          <p>Trendy & comfortable styles for women.</p>
+          <p><a class="btn" href="#" onclick="openVyaparPlaceholder(event)">View Products</a></p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">KIDS</div>
+          <h4>Kids Footwear</h4>
+          <p>Durable & comfy shoes for children.</p>
+          <p><a class="btn" href="#" onclick="openVyaparPlaceholder(event)">View Products</a></p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">ACC</div>
+          <h4>Accessories</h4>
+          <p>Socks, laces, insoles and more.</p>
+          <p><a class="btn" href="#" onclick="openVyaparPlaceholder(event)">View Products</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About BABA QUALITY FOOTWEAR</h3>
+      <p>We are a local footwear shop offering a curated selection of footwear for men, women and kids — plus useful accessories. Quality workmanship and friendly service are our promise.</p>
+      <p><strong>Location:</strong> Use the map link below to get directions.</p>
+      <p><a class="link" target="_blank" rel="noopener" href="https://maps.app.goo.gl/q1GCpgW1RavGHK7Y8">Open shop location in Google Maps</a></p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like us to add your Vyapar store link, send it and we'll update the site.</p>
+      <ul>
+        <li><strong>Phone / WhatsApp:</strong> +91 <!-- add your phone here --></li>
+        <li><strong>Address:</strong> See map link above</li>
+      </ul>
+      <p><a class="btn" href="#" onclick="openWhatsApp()">Message on WhatsApp</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© BABA QUALITY FOOTWEAR</div>
+      <div><small>Built with ❤ — Ready to add Vyapar store link</small></div>
+    </div>
+  </footer>
+
+  <!-- Modal for Vyapar placeholder -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <h4 id="modalTitle">Vyapar Link Coming Soon</h4>
+      <p>We didn't get your Vyapar store link yet. When you provide it, we'll replace these buttons so customers go straight to your store.</p>
+      <p><button class="btn btn-primary" onclick="closeModal()">Okay</button></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
